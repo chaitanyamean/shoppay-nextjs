@@ -16,7 +16,10 @@ export default function Top({ country }) {
       <div className={styles.top__container}>
         <div></div>
         <ul className={styles.top__list}>
-          <li className={styles.li}></li>
+          <li className={styles.li}>
+            <img src={country.flag} alt="country flag" />
+            <span>{country.name}</span>
+          </li>
           <li className={styles.li}>
             <MdSecurity />
             <span>Buyer Protection</span>
